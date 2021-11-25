@@ -1,7 +1,7 @@
 class QuizNetworkDto {
   final String question;
   final List<String> answers;
-  /// Id of correct answer
+  /// Индекс верного ответа
   final int id;
 
   QuizNetworkDto({
@@ -15,7 +15,7 @@ extension QuizSerializer on Map<String, dynamic> {
   QuizNetworkDto get convertToQuizNetworkDto {
     return QuizNetworkDto(
       question: this['question'],
-      answers: this['answers'],
+      answers: List<String>.from(this['answers']),
       id: this['id'],
     );
   }
