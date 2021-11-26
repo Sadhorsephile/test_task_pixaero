@@ -22,6 +22,7 @@ class GetQuizApiImpl implements GetQuizApi {
     final result = await _client.get(
       '/api/millionaire.php',
       queryParameters: {
+      // qType принимает значения от 1 до 3 включительно и обозначает сложность вопроса
         'qType': Random().nextInt(2) + 1,
         'count': _countOfQuestions,
       },

@@ -15,11 +15,7 @@ class _AnswerCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      customBorder: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(_borderRadius)),
-      splashColor: Theme.of(context).primaryColor,
-      highlightColor: Theme.of(context).primaryColor,
+    return GestureDetector(
       onTap: onPressed,
       child: Container(
         width: double.infinity,
