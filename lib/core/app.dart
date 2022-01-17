@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
             GetGifByAnswerApiImpl(),
           ),
         ),
-        child: const MyHomePage(title: 'Pixaero Test Task'),
+        child: const MyHomePage(title: 'Test app'),
       ),
     );
   }
